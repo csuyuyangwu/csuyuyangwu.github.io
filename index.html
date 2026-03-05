@@ -1,1 +1,270 @@
-<h1>Yuyang Wu</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yuyang Wu</title>
+  <meta name="description" content="Yuyang Wu - Personal academic homepage" />
+
+  <style>
+    :root{
+      --text:#222;
+      --muted:#666;
+      --link:#0b5bd3;
+      --bg:#ffffff;
+      --card:#fafafa;
+      --border:#e8e8e8;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      line-height:1.6;
+    }
+    .container{
+      max-width: 980px;
+      margin: 40px auto;
+      padding: 0 18px 60px;
+    }
+    header{
+      display:flex;
+      gap:26px;
+      align-items:flex-start;
+      flex-wrap:wrap;
+    }
+    .avatar{
+      width: 170px;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      background:#fff;
+    }
+    h1{
+      margin:0 0 6px 0;
+      font-size: 34px;
+      letter-spacing: .2px;
+    }
+    .subtitle{color:var(--muted); margin:0 0 10px 0;}
+    .links a{color:var(--link); text-decoration:none}
+    .links a:hover{text-decoration:underline}
+    nav{
+      margin-top: 18px;
+      display:flex;
+      flex-wrap:wrap;
+      gap: 14px;
+    }
+    nav a{
+      color:var(--link);
+      text-decoration:none;
+      padding: 6px 10px;
+      border:1px solid var(--border);
+      border-radius: 10px;
+      background: #fff;
+      font-size: 14px;
+    }
+    nav a:hover{border-color:#cfd8ff}
+
+    hr{
+      border:0;
+      border-top:1px solid var(--border);
+      margin: 26px 0;
+    }
+
+    section{margin-top: 26px;}
+    h2{
+      font-size: 20px;
+      margin: 0 0 12px 0;
+    }
+    .card{
+      background: var(--card);
+      border:1px solid var(--border);
+      border-radius: 14px;
+      padding: 14px 16px;
+    }
+    ul{margin: 10px 0 0 0; padding-left: 18px;}
+    li{margin: 8px 0;}
+    .meta{color:var(--muted); font-size: 14px;}
+    .pill{
+      display:inline-block;
+      font-size: 12px;
+      padding: 2px 8px;
+      border-radius: 999px;
+      border:1px solid var(--border);
+      background:#fff;
+      color:var(--muted);
+      margin-left: 8px;
+      vertical-align: middle;
+    }
+    .two-col{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+    @media (min-width: 860px){
+      .two-col{grid-template-columns: 1fr 1fr;}
+    }
+
+    footer{
+      margin-top: 42px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .small{font-size:14px; color:var(--muted)}
+    .project-title{font-weight:600}
+    .project-links a{color:var(--link); text-decoration:none}
+    .project-links a:hover{text-decoration:underline}
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- ===== Header / Intro ===== -->
+    <header id="home">
+      <img class="avatar" src="avatar.jpg" alt="Avatar (avatar.jpg)" />
+
+      <div style="flex:1; min-width: 260px;">
+        <h1>Yuyang Wu</h1>
+        <p class="subtitle">
+          <!-- 改成你的身份信息 -->
+          Researcher / Graduate Student · Your University or Institute
+        </p>
+
+        <div class="links">
+          <!-- 把这些链接改成你的 -->
+          Email: <a href="mailto:your_email@example.com">your_email@example.com</a>
+          &nbsp;·&nbsp;
+          <a href="https://github.com/neil666-com">GitHub</a>
+          &nbsp;·&nbsp;
+          <a href="https://scholar.google.com/">Google Scholar</a>
+          &nbsp;·&nbsp;
+          <a href="https://www.linkedin.com/">LinkedIn</a>
+          <!-- 可加：CV PDF -->
+          &nbsp;·&nbsp;
+          <a href="cv.pdf">CV</a>
+        </div>
+
+        <p style="margin-top:14px;">
+          <!-- 一段简短自我介绍（建议 2~4 句） -->
+          I work on <b>Natural Language Processing</b> and <b>Machine Learning</b>, with a focus on
+          <b>Aspect-Based Sentiment Analysis</b>, <b>information extraction</b>, and <b>large language models</b>.
+          I am interested in building robust models that work well in real-world scenarios.
+        </p>
+
+        <nav>
+          <a href="#news">News</a>
+          <a href="#awards">Awards</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <hr />
+
+    <!-- ===== News ===== -->
+    <section id="news">
+      <h2>News</h2>
+      <div class="card">
+        <ul>
+          <!-- 把日期和内容改成你的，建议按时间倒序 -->
+          <li><b>2026-03</b> — Started building my personal academic website. <span class="pill">Website</span></li>
+          <li><b>2026-02</b> — Released an ABSA demo based on BERT/PyTorch. <span class="pill">NLP</span></li>
+          <li><b>2025-12</b> — Submitted a paper on sentiment analysis. <span class="pill">Paper</span></li>
+        </ul>
+        <p class="small" style="margin-top:10px;">Tip: Keep it short. 5–10 items are enough.</p>
+      </div>
+    </section>
+
+    <!-- ===== Awards + Experience layout (optional) ===== -->
+    <section id="awards">
+      <h2>Awards</h2>
+      <div class="card">
+        <ul>
+          <!-- 替换为你的奖项 -->
+          <li><b>2025</b> — Outstanding Student Scholarship, Your University.</li>
+          <li><b>2024</b> — First Prize, XXX Competition.</li>
+          <li><b>2023</b> — Excellent Research Award, Your Lab/Institute.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div class="two-col">
+        <div class="card">
+          <div class="project-title">Aspect-Based Sentiment Analysis Toolkit <span class="pill">NLP</span></div>
+          <div class="meta">2025 — PyTorch · BERT · Inference demo</div>
+          <p style="margin:10px 0 0 0;">
+            Built a lightweight ABSA inference pipeline supporting “sentence + aspect” input format,
+            with reproducible preprocessing and evaluation scripts.
+          </p>
+          <div class="project-links" style="margin-top:10px;">
+            <a href="#">Code</a> · <a href="#">Demo</a> · <a href="#">Report</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="project-title">Research Project: Robust Sentiment Modeling <span class="pill">Research</span></div>
+          <div class="meta">2024–2025 — Domain adaptation · Noisy labels</div>
+          <p style="margin:10px 0 0 0;">
+            Explored robustness techniques (data augmentation, regularization, prompt-based supervision)
+            to improve cross-domain generalization on sentiment benchmarks.
+          </p>
+          <div class="project-links" style="margin-top:10px;">
+            <a href="#">Paper</a> · <a href="#">Slides</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="project-title">Information Extraction from Reviews <span class="pill">IE</span></div>
+          <div class="meta">2024 — Entity/Aspect extraction · Evaluation</div>
+          <p style="margin:10px 0 0 0;">
+            Implemented a sequence labeling baseline and analyzed error cases for aspect term extraction,
+            focusing on long-tail entities and ambiguous mentions.
+          </p>
+          <div class="project-links" style="margin-top:10px;">
+            <a href="#">Code</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="project-title">LLM-assisted Annotation Pipeline <span class="pill">LLM</span></div>
+          <div class="meta">2023–2024 — Prompting · Quality control</div>
+          <p style="margin:10px 0 0 0;">
+            Designed a semi-automatic labeling workflow using LLM suggestions and human verification,
+            improving labeling speed while maintaining quality.
+          </p>
+          <div class="project-links" style="margin-top:10px;">
+            <a href="#">Notes</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <p style="margin:0;">
+          Email: <a href="mailto:your_email@example.com">your_email@example.com</a><br/>
+          GitHub: <a href="https://github.com/neil666-com">github.com/neil666-com</a><br/>
+          Location: Paris, France (optional)
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Yuyang Wu · Last updated: 2026-03-05
+    </footer>
+  </div>
+
+  <script>
+    // auto year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
